@@ -3,21 +3,40 @@
 const form = document.getElementById('contactForm');
 const successMessage = document.getElementById('successMessage');
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Отменяем стандартную отправку страницы
+const SERVER_URL = 'https://landing-backend-q4cf.onrender.com/submit';
+form.addEventListener('submit', async function(e) {
+    e.preventDefault(); // Отменяем стандартную отправку
 
-    // Показываем сообщение об успехе
-    successMessage.style.display = 'block';
+    // Собираем данные из полей формы
+    const formData = {
+        name:    form.querySelector('input[type="text"]').value,
+        phone:   form.querySelector('input[type="tel"]').value,
+        email:   form.querySelector('input[type="email"]').value,
+        message: form.querySelector('textarea').value
+    };
 
-    // Очищаем все поля формы
-    form.reset();
+    try {
+        // Отправляем данные на Flask сервер
+        const response = await fetch(SERVER_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData) // Конвертируем в JSON
+        });
 
-    // Скрываем сообщение через 4 секунды
-    setTimeout(function() {
-        successMessage.style.display = 'none';
-    }, 4000);
+        if (response.ok) {
+            // Успех — показываем сообщение и очищаем форму
+            successMessage.style.display = 'block';
+            form.reset();
+
+            setTimeout(function() {
+                successMessage.style.display = 'none';
+            }, 4000);
+        }
+
+    } catch (error) {
+        console.error('Ошибка отправки:', error);
+    }
 });
-
 
 // ===== 2. КНОПКА "НАВЕРХ" =====
 
