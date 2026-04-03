@@ -9,7 +9,7 @@ body {
 
 /* ===== НАВИГАЦИЯ ===== */
 .navbar {
-    background-color: #1a3c5e;
+    background-color: #1a5e44;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ body {
 
 /* ===== ШАПКА ===== */
 .header {
-    background-color: #1a3c5e;
+    background-color: #1a5e44;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -67,7 +67,7 @@ body {
 .hero-btn {
     display: inline-block;
     background-color: white;
-    color: #1a3c5e;
+    color: #1a5e44;
     padding: 15px 40px;
     border-radius: 30px;
     text-decoration: none;
@@ -89,7 +89,7 @@ body {
 
 .about h2 {
     font-size: 32px;
-    color: #1a3c5e;
+    color: #1a5e44;
     margin-bottom: 40px;
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 .feature-card h3 {
-    color: #1a3c5e;
+    color: #1a5e44;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -138,7 +138,7 @@ body {
 }
 
 .services h3 {
-    color: #1a3c5e;
+    color: #1a5e44;
     font-size: 26px;
     margin-bottom: 20px;
 }
@@ -151,7 +151,7 @@ body {
 
 /* ===== ФОРМА КОНТАКТА ===== */
 .contact-section {
-    background-color: #1a3c5e;
+    background-color: #1a5e44;
     padding: 70px 20px;
     text-align: center;
     color: white;
@@ -185,7 +185,7 @@ body {
 
 .contact-form button {
     background-color: white;
-    color: #1a3c5e;
+    color: #1a5e44;
     padding: 15px;
     border: none;
     border-radius: 30px;
@@ -225,7 +225,7 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #1a3c5e;
+    background-color: #1a5e44;
     color: white;
     border: none;
     border-radius: 50%;
@@ -239,7 +239,7 @@ body {
 }
 
 .scroll-top:hover {
-    background-color: #2a5a8e;
+    background-color: #1a5e44;
 }
 
 /* ===== АНИМАЦИЯ ПОЯВЛЕНИЯ ===== */
