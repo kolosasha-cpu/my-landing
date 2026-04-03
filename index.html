@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эксплуатация объектов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="navbar">
+        <div class="nav-logo">ФМ Эксплуатация</div>
+        <ul class="nav-links">
+            <li><a href="#header">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- ШАПКА -->
+    <div class="header" id="header">
+        <h1>Эксплуатация объектов</h1>
+        <h2>Профессиональное управление недвижимостью</h2>
+        <a href="#contact" class="hero-btn">Получить консультацию</a>
+    </div>
+
+    <!-- О НАС -->
+    <div class="about fade-in" id="about">
+        <h2>Почему выбирают нас?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Опыт 10+ лет</h3>
+                <p>Многолетний опыт управления объектами различного назначения</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Быстрое реагирование</h3>
+                <p>Аварийная служба работает круглосуточно 24/7</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Прозрачная отчётность</h3>
+                <p>Регулярные отчёты о состоянии объекта и выполненных работах</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- УСЛУГИ -->
+    <div class="services fade-in" id="services">
+        <h3>Наши услуги:</h3>
+        <p>🔧 Техническое обслуживание</p>
+        <p>⚙️ Управление инженерными системами</p>
+        <p>🏗️ Плановый ремонт</p>
+        <p>🔥 Обслуживание систем отопления</p>
+        <p>💧 Водоснабжение и канализация</p>
+        <p>🔌 Электроснабжение и освещение</p>
+    </div>
+
+    <!-- ФОРМА КОНТАКТА -->
+    <div class="contact-section fade-in" id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Ваш телефон" required>
+            <input type="email" placeholder="Ваш email">
+            <textarea placeholder="Опишите вашу задачу..." rows="4"></textarea>
+            <button type="submit">Отправить заявку</button>
+            <!-- Сообщение об успехе -->
+            <div class="success-message" id="successMessage">
+                ✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.
+            </div>
+        </form>
+    </div>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <p>© 2025 Эксплуатация объектов. Все права защищены.</p>
+        <p>📞 +7 (999) 123-45-67 | ✉️ info@example.com</p>
+    </footer>
+
+    <!-- КНОПКА НАВЕРХ -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
